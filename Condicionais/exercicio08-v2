@@ -1,0 +1,19 @@
+# 8) Faça um programa que receba o nome, cargo e salário de um funcionário. Se o funcionário ganhar abaixo de 1000 reais, calcule o salário acrescido de 10%. Ao final exiba o nome, o cargo e o salário desse funcionário.
+
+# Entrada
+nome = input("Digite seu nome: ")
+cargo = input("Digite seu cargo: ")
+salario = float(input("Digite seu salário: "))
+
+print(f"Seu nome: {nome}")
+print(f"Seu cargo: {cargo}")
+
+# Processamento
+if salario < 1000 : 
+    salario = salario * 1.10
+    print(f"Seu novo salário: R${salario:.2f} ")
+else :
+    print(f"Seu salário não tem direito a reajuste, salário: R${salario:.2f} ")
+
+# Saída
+print("Fim do programa")
